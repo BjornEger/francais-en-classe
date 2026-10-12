@@ -6,11 +6,11 @@ Un tableau de bord français-danois pour retrouver rapidement des mots pendant l
 
 - 69 verbes : présent, passé composé et futur proche.
 - 64 adjectifs : formes masculines, féminines et plurielles.
-- Nombres cardinaux et ordinaux ; conversion de 0 à 1 000 000.
-- 305 expressions et mots utiles, dont 224 fiches dans six rubriques : vacances, météo, immobilier, restaurant, travail et carrière, football.
+- Nombres cardinaux et ordinaux, années, surfaces (m²), volumes (m³) et devises ; conversion de 0 à 1 000 000.
+- 313 expressions et mots utiles, dont 232 fiches dans six rubriques : vacances, météo, immobilier, restaurant, travail et carrière, football.
 - Recherche en français et en danois, filtres et favoris.
 
-Ouvrir `index.html` dans un navigateur. Aucun service externe ni installation n’est nécessaire. Les favoris sont enregistrés dans le navigateur ; la lecture audio dépend des voix disponibles sur l’appareil.
+Ouvrir `index.html` dans un navigateur. Aucun service externe ni installation n’est nécessaire. Les favoris sont enregistrés dans le navigateur ; la lecture audio utilise uniquement les voix françaises disponibles sur l’appareil ou dans le navigateur, avec priorité au français de France. Une voix anglaise ne sera jamais utilisée comme solution de repli.
 
 ## Hébergement GitHub Pages
 

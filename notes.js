@@ -1,5 +1,6 @@
 // Curated classroom vocabulary. Stable IDs keep existing favorites intact.
 const themes={vacances:'Vacances',meteo:'Météo',immobilier:'Immobilier',restaurant:'Au restaurant',travail:'Travail & carrière',football:'Football'};
+// Professional football: ownership, financing and transfers.
 function lessonVerb(fr,da,present,part,ex,exda,group='Au quotidien',aux='avoir',note=''){
   entries.push({id:'lesson-verb-'+fr,type:'verbes',fr,da,group,present:present.split('|'),part,aux,ex,exda,note});
 }
@@ -74,6 +75,16 @@ entries.push({id:'lesson-verb-neiger',type:'verbes',fr:'neiger',da:'at sne',grou
 ['concentré','koncentreret','Sport','concentré|concentrée|concentrés|concentrées','Restez concentrés !','Hold koncentrationen!']
 ].forEach(a=>{const before=entries.length;adj(...a);entries[before].id='lesson-adj-'+a[0]});
 function topic(theme,group,rows){rows.forEach(([fr,da,note='',ex='',exda=''])=>entries.push({id:'topic-'+theme+'-'+fr,type:'expressions',theme,group,fr,da,note,ex,exda}));}
+topic('football','Football professionnel',[
+['Qui est le propriétaire du club ?','Hvem ejer klubben?','Un propriétaire = en ejer ; un actionnaire = en aktionær.'],
+['Le club a été racheté par un groupe d’investisseurs.','Klubben er blevet opkøbt af en gruppe investorer.','Racheter un club = at opkøbe en klub.'],
+['Le sponsor principal finance une partie du budget.','Hovedsponsoren finansierer en del af budgettet.','Un sponsor / un partenaire commercial = en sponsor / en kommerciel partner.'],
+['Les intérêts financiers influencent les décisions du club.','Kapitalinteresser påvirker klubbens beslutninger.','Des intérêts financiers = økonomiske interesser / kapitalinteresser.'],
+['Le club a recruté un joueur pour vingt millions d’euros.','Klubben har købt en spiller for tyve millioner euro.','Recruter = at hente / ansætte ; une indemnité de transfert = en transfersum.'],
+['Le club envisage de vendre son meilleur attaquant.','Klubben overvejer at sælge sin bedste angriber.','Le mercato = transfervinduet / transfermarkedet.'],
+['Le joueur a été prêté avec une option d’achat.','Spilleren er blevet udlejet med en købsoption.','Prêter un joueur = at udleje en spiller ; une option d’achat = en købsoption.'],
+['Le joueur a prolongé son contrat de trois ans.','Spilleren har forlænget sin kontrakt med tre år.','Prolonger un contrat = at forlænge en kontrakt.']
+]);
 topic('vacances','Voyager',[
 ['Nous partons en vacances.','Vi tager på ferie.'],['Nous sommes déjà partis ensemble.','Vi har allerede rejst sammen.'],['Nous restons une semaine.','Vi bliver en uge.'],['Je voudrais réserver une chambre.','Jeg vil gerne reservere et værelse.'],['La chambre est-elle climatisée ?','Er der aircondition på værelset?'],['À quelle heure peut-on arriver ?','Hvornår kan man ankomme?'],['Le petit-déjeuner est-il compris ?','Er morgenmad inkluderet?'],['Je voudrais un billet aller-retour.','Jeg vil gerne have en returbillet.'],['Où est la gare ?','Hvor er stationen?'],['C’est à combien de kilomètres ?','Hvor mange kilometer er der?'],['On peut y aller à pied ?','Kan man gå derhen?'],['au milieu de nulle part','midt ude i ingenting'],['pendant les vacances','i ferien'],['l’été dernier','sidste sommer']]);
 topic('vacances','À vélo',[
